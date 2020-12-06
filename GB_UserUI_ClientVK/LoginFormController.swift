@@ -20,10 +20,44 @@ class LoginFormController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
     @IBOutlet weak var loginInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        
+        guard checkInputUserData() else {
+            showErrorAlert()
+            return false
+        }
+        
+        return true
+    }
+    
+    private func checkInputUserData() -> Bool {
+        
+        guard
+            let login = loginInput.text,
+            let password = passwordInput.text
+        
+        else { return false }
+        
+        return login == "1" && password == "1"
+    }
+
+    private func showErrorAlert() {
+        
+        let alerContoller = UIAlertController(
+            title: "Error",
+            message: "Incorrect login or password",
+            preferredStyle: .alert)
+        
+        let alertItem = UIAlertAction(title: "Ok", style: .cancel)
+        
+        alerContoller.addAction(alertItem)
+        present(alerContoller, animated: true)
+        
+    }
     
     @IBAction func loginButton(_ sender: Any) {
         

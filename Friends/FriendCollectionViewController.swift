@@ -9,11 +9,7 @@ import UIKit
 
 class FriendCollectionViewController: UICollectionViewController {
     
-    var userIndex: Int = 0
-    
-    var name: String = ""
-    var city: String = ""
-    var image: UIImage = UIImage()
+    var userData: UserData?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,11 +48,10 @@ class FriendCollectionViewController: UICollectionViewController {
             return UICollectionViewCell()
         }
         
-        /* Вопрос. Как здесь получить из  FrinendsTableViewController массив  myFriends для того чтобы по индексу (userIndex) найти данные пользователя?*/
-        
-        cell.name.text = name
-        cell.city.text = city
-        cell.image.image = image
+        cell.name.text = userData?.name
+        cell.city.text = userData?.city
+        cell.image.image = userData?.image
+        cell.photoLikeControl.countLikes = userData?.countImageLikes ?? 9
     
         return cell
     }

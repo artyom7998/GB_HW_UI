@@ -14,8 +14,8 @@
             filePath = "Friends/FriendTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
             landmarkName = "FriendTableViewCell"
             landmarkType = "3">
             <Locations>
@@ -138,8 +138,8 @@
             filePath = "Friends/FrinendsTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,8 +154,8 @@
             filePath = "Friends/FriendCollectionViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -164,16 +164,24 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "28200430-9ABD-4ABC-B68D-60943ECDFF0D"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
-            continueAfterRunningActions = "No"
+            continueAfterRunningActions = "Yes"
             filePath = "Friends/FriendCollectionViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "print(userData.name)">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -186,8 +194,8 @@
             filePath = "Friends/FriendCollectionViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,8 +210,8 @@
             filePath = "Friends/FriendCollectionViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -218,8 +226,8 @@
             filePath = "Friends/FriendCollectionViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,6 +246,456 @@
             endingLineNumber = "14"
             landmarkName = "addGroup(segue:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "203B89E9-88B4-47A7-A32C-AEB0A95D2A43"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Login/LoginFormController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "shouldPerformSegue(withIdentifier:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5297D47F-954A-41C4-8F53-B7D62E67421A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Login/LoginFormController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "shouldPerformSegue(withIdentifier:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C865123B-9975-4785-802C-AF2C6BC1178B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AvatarImage/AvatarImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B44D42C6-5979-48E8-8071-98A7FC9F2540"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AvatarImage/AvatarImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A112AC9-15F1-4B5B-BD39-955AF32FA35E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AvatarImage/AvatarImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF462ED7-DCB3-4122-B641-CF28E7FDA20D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Friends/FrinendsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C26AD4C4-37A9-4A03-8B55-E22735C3EDB1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImLikeIt/ImLikeIt.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "ImLikeIt"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B6AD019D-901D-491D-9141-9C8EC934F2F2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImLikeIt/ImLikeIt.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "ImLikeIt"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E878E7A7-8F2F-4BDA-A6F6-13D681BF4BC7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Friends/FriendCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5034DE96-BF3F-482D-900B-93AEB29F37F6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImLikeIt/ImLikeIt.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ImLikeIt"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5034DE96-BF3F-482D-900B-93AEB29F37F6 - 1bc2197f4d5623b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.ImLikeIt.countLikes.getter : Swift.Int"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/ImLikeIt/ImLikeIt.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "110">
+               </Location>
+               <Location
+                  uuid = "5034DE96-BF3F-482D-900B-93AEB29F37F6 - 4056ea674bb777a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.ImLikeIt.countLikes.setter : Swift.Int"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/ImLikeIt/ImLikeIt.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "118">
+               </Location>
+               <Location
+                  uuid = "5034DE96-BF3F-482D-900B-93AEB29F37F6 - dbe5f59512d50702"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.ImLikeIt.countLikes.modify : Swift.Int"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/ImLikeIt/ImLikeIt.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "5034DE96-BF3F-482D-900B-93AEB29F37F6 - b95420313e333ca9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.ImLikeIt.countLikes.modify : Swift.Int with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/ImLikeIt/ImLikeIt.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C8B613D-6FBD-4903-9CA5-1DDAEFF5E0F9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "Yes"
+            filePath = "ImLikeIt/ImLikeIt.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "isLiked"
+            landmarkType = "24">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "print(countLikes)">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+            <Locations>
+               <Location
+                  uuid = "1C8B613D-6FBD-4903-9CA5-1DDAEFF5E0F9 - 2fcdefedb393b451"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.ImLikeIt.isLiked.getter : Swift.Bool"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/ImLikeIt/ImLikeIt.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "89">
+               </Location>
+               <Location
+                  uuid = "1C8B613D-6FBD-4903-9CA5-1DDAEFF5E0F9 - cbe5bdd3cebc9c45"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.ImLikeIt.isLiked.setter : Swift.Bool"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/ImLikeIt/ImLikeIt.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "129">
+               </Location>
+               <Location
+                  uuid = "1C8B613D-6FBD-4903-9CA5-1DDAEFF5E0F9 - db0d3032d0739c01"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.ImLikeIt.isLiked.modify : Swift.Bool"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/ImLikeIt/ImLikeIt.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  uuid = "1C8B613D-6FBD-4903-9CA5-1DDAEFF5E0F9 - b6ac6ea23dc17a45"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.ImLikeIt.isLiked.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/ImLikeIt/ImLikeIt.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "10">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68BA2FD7-36F1-4040-87FA-D46A9167140F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImLikeIt/ImLikeIt.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ImLikeIt"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "68BA2FD7-36F1-4040-87FA-D46A9167140F - 1bc2197f4d5623b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.ImLikeIt.countLikes.getter : Swift.Int"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/ImLikeIt/ImLikeIt.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "110">
+               </Location>
+               <Location
+                  uuid = "68BA2FD7-36F1-4040-87FA-D46A9167140F - 4056ea674bb777a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.ImLikeIt.countLikes.setter : Swift.Int"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/ImLikeIt/ImLikeIt.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "118">
+               </Location>
+               <Location
+                  uuid = "68BA2FD7-36F1-4040-87FA-D46A9167140F - dbe5f59512d50702"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.ImLikeIt.countLikes.modify : Swift.Int"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/ImLikeIt/ImLikeIt.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "68BA2FD7-36F1-4040-87FA-D46A9167140F - b95420313e333ca9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.ImLikeIt.countLikes.modify : Swift.Int with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/ImLikeIt/ImLikeIt.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0B845541-456F-474E-9AA5-CA2C371F2038"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImLikeIt/ImLikeIt.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "init(frame:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F8F45D6D-05A0-4AF1-B615-E8C7326707AB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImLikeIt/ImLikeIt.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "init(coder:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F8F45D6D-05A0-4AF1-B615-E8C7326707AB - 13e66d5aeb30d452"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.ImLikeIt.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;GB_UserUI_ClientVK.ImLikeIt&gt;"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/ImLikeIt/ImLikeIt.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "F8F45D6D-05A0-4AF1-B615-E8C7326707AB - f136cd30108c482a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.ImLikeIt.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;GB_UserUI_ClientVK.ImLikeIt&gt;"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/ImLikeIt/ImLikeIt.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "196">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

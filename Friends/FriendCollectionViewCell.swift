@@ -12,4 +12,5 @@ class FriendCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var city: UILabel!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var photoLikeControl: ImLikeIt!
 }

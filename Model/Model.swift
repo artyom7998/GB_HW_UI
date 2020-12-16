@@ -10,12 +10,14 @@ import UIKit
 public struct UserData {
     var name: String
     var city: String
-    var image: UIImage
+    var image: UIImage?
+    var countImageLikes: Int
     
-    init(_ name: String, _ city: String, _ image: UIImage) {
+    init(_ name: String, _ city: String, _ image: UIImage, _ countImageLikes: Int) {
         self.name = name
         self.city = city
         self.image = image
+        self.countImageLikes = countImageLikes
     }
 }
 

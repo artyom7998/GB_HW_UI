@@ -9,18 +9,22 @@ import UIKit
 
 @IBDesignable class ImLikeIt: UIControl {
     
-    var countLikes: Int = 0
-    var isLiked: Bool  = false {
+    var countLikes: Int = 0 {
         didSet {
-            self.updateCountLikes()
-            self.showLikes()
+            label.text = String(countLikes)
+            button.isSelected = self.isLiked
+        }
+    }
+    
+    var isLiked: Bool = false {
+        didSet {
+            button.isSelected = self.isLiked
         }
     }
     
     private var stackView = UIStackView()
     private let button = UIButton(type: .custom)
     private let label = UILabel()
-    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -53,15 +57,11 @@ import UIKit
     @objc
     private func selectLike(_ sender: UIButton) {
         self.isLiked = !self.isLiked
+        self.updateCountLikes()
     }
     
     private func updateCountLikes() {
         self.countLikes = self.isLiked ? self.countLikes + 1 : self.countLikes - 1
-    }
-    
-    private func showLikes() {
-        button.isSelected = self.isLiked
-        self.label.text = String(self.countLikes)
     }
     
     override func layoutSubviews() {

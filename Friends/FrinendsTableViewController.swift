@@ -9,21 +9,34 @@ import UIKit
 
 class FrinendsTableViewController: UITableViewController {
   
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var myFriends =
         [
         UserData("Иванов Иван", "Москва", UIImage(named: "friend1")!, 100),
         UserData("Петров Петр", "Санкт Петербург", UIImage(named: "friend2")!, 200)
         ]
+    
+    var firstLetters = [Character]()
+    var sortedFriends = [Character: [UserData]]()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        (firstLetters, sortedFriends) = sort(myFriends)
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+        return firstLetters.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
-        return myFriends.count
+        let friendsForLetter = firstLetters[section]
+        return sortedFriends[friendsForLetter]?.count ?? 0
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return String(firstLetters[section])
     }
 
 
@@ -35,10 +48,14 @@ class FrinendsTableViewController: UITableViewController {
              return UITableViewCell()
         }
         
-        cell.name.text = myFriends[indexPath.row].name
-        cell.city.text = myFriends[indexPath.row].city
-        cell.avatarImage.photoImage.image = myFriends[indexPath.row].image
-
+        let fristLetter = firstLetters[indexPath.section]
+        
+        if let userData = sortedFriends[fristLetter] {
+            cell.name.text = userData[indexPath.row].name
+            cell.city.text = userData[indexPath.row].city
+            cell.avatarImage.photoImage.image = userData[indexPath.row].image
+        }
+        
         return cell
     }
     
@@ -54,10 +71,57 @@ class FrinendsTableViewController: UITableViewController {
         guard
             segue.identifier == "ShowDetailDataFriend",
             let destination = segue.destination as? FriendCollectionViewController,
-            let index = tableView.indexPathForSelectedRow?.row
+            let indexPath = tableView.indexPathForSelectedRow
         else { return }
         
-        destination.userData = myFriends[index]
+        let fristLetter = firstLetters[indexPath.section]
+        let friends = sortedFriends[fristLetter]
+        destination.userData = friends?[indexPath.row]
+        
+    }
+    
+    private func sort( _ friends: [UserData]) -> (characters: [Character], sortedFriends: [Character: [UserData]]) {
+        
+        var characters = [Character]()
+        var sortedFriends = [Character: [UserData]]()
+        
+        friends.forEach { userData in
+            
+            guard let character = userData.name.first else { return }
+            
+            if var thisCharUsers = sortedFriends[character] {
+                thisCharUsers.append(userData)
+                sortedFriends[character] = thisCharUsers
+            } else {
+                sortedFriends[character] = [userData]
+                characters.append(character)
+            }
+            characters.sort()
+        }
+        return (characters, sortedFriends)
+    }
+}
+
+extension FrinendsTableViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filterFrineds(with: searchText)
+    }
+    
+    func filterFrineds(with text: String) {
+        
+        if text.isEmpty {
+            (firstLetters, sortedFriends) = sort(myFriends)
+            tableView.reloadData()
+            return
+        }
+        
+        let filteredFriends = myFriends.filter({ (userData) -> Bool in
+            return userData.name.lowercased().contains(text.lowercased())
+        })
+        
+        (firstLetters, sortedFriends) = sort(filteredFriends)
+        tableView.reloadData()
         
     }
 }

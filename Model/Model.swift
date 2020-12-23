@@ -37,12 +37,12 @@ public struct NewsData: Equatable {
     var publisherImage: UIImage
     
     var publicationDateForShow: String
-    var publicationText: String
-    var publicationImage: UIImage
+    var publicationText: String?
+    var publicationImage: UIImage?
     var countLikes: Int
     var isLike: Bool
     
-    init(_ publisherName: String, _ publisherImage: UIImage, _ publicationDate: Date, _ publicationText: String, _ publicationImage: UIImage, _ countLikes: Int, _ isLike: Bool) {
+    init(_ publisherName: String, _ publisherImage: UIImage, _ publicationDate: Date, _ publicationText: String?, _ publicationImage: UIImage?, _ countLikes: Int, _ isLike: Bool) {
         self.publisherName = publisherName
         self.publisherImage = publisherImage
         self.publicationDateForShow = formatDateForShow(publicationDate)
@@ -60,7 +60,7 @@ func fillArrayTestNews(_ news: inout [NewsData]) {
     for count in 1...10 {
         
         news.append(
-            NewsData("Лучшие новости",
+            NewsData("Лучшие новости - " + String(count),
                      UIImage(named: "newsPublisher1")!,
                      nowDate,
                      "Apple представила M1 — первый процессор в линейке Apple Silicon. Это система на чипе (SoC), включающая восьмиядерные CPU и GPU, Neural Engine и другие составляющие.",

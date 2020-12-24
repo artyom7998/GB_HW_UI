@@ -29,6 +29,12 @@
 		0DA27765258E446400767C49 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA27764258E446400767C49 /* NewsTableViewController.swift */; };
 		0DA27769258E44FD00767C49 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA27767258E44FD00767C49 /* NewsTableViewCell.swift */; };
 		0DA2776A258E44FD00767C49 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DA27768258E44FD00767C49 /* NewsTableViewCell.xib */; };
+		0DD731982593CE2B00499C5D /* NewsTableViewSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD731972593CE2B00499C5D /* NewsTableViewSectionHeader.xib */; };
+		0DD7319B2593CEBA00499C5D /* NewsTableViewSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7319A2593CEBA00499C5D /* NewsTableViewSectionHeader.swift */; };
+		0DD731A02593DD9C00499C5D /* NewsTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7319F2593DD9C00499C5D /* NewsTextTableViewCell.swift */; };
+		0DD731A32593DF5F00499C5D /* NewsImagePublicationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD731A22593DF5F00499C5D /* NewsImagePublicationCell.swift */; };
+		0DD731A82593F4FB00499C5D /* NewsTableSectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD731A62593F4FB00499C5D /* NewsTableSectionFooter.swift */; };
+		0DD731A92593F4FB00499C5D /* NewsTableSectionFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD731A72593F4FB00499C5D /* NewsTableSectionFooter.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +62,12 @@
 		0DA27764258E446400767C49 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		0DA27767258E44FD00767C49 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		0DA27768258E44FD00767C49 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		0DD731972593CE2B00499C5D /* NewsTableViewSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewSectionHeader.xib; sourceTree = "<group>"; };
+		0DD7319A2593CEBA00499C5D /* NewsTableViewSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewSectionHeader.swift; sourceTree = "<group>"; };
+		0DD7319F2593DD9C00499C5D /* NewsTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTextTableViewCell.swift; sourceTree = "<group>"; };
+		0DD731A22593DF5F00499C5D /* NewsImagePublicationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsImagePublicationCell.swift; sourceTree = "<group>"; };
+		0DD731A62593F4FB00499C5D /* NewsTableSectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableSectionFooter.swift; sourceTree = "<group>"; };
+		0DD731A72593F4FB00499C5D /* NewsTableSectionFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableSectionFooter.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +195,12 @@
 				0DA27764258E446400767C49 /* NewsTableViewController.swift */,
 				0DA27767258E44FD00767C49 /* NewsTableViewCell.swift */,
 				0DA27768258E44FD00767C49 /* NewsTableViewCell.xib */,
+				0DD731972593CE2B00499C5D /* NewsTableViewSectionHeader.xib */,
+				0DD7319A2593CEBA00499C5D /* NewsTableViewSectionHeader.swift */,
+				0DD7319F2593DD9C00499C5D /* NewsTextTableViewCell.swift */,
+				0DD731A22593DF5F00499C5D /* NewsImagePublicationCell.swift */,
+				0DD731A62593F4FB00499C5D /* NewsTableSectionFooter.swift */,
+				0DD731A72593F4FB00499C5D /* NewsTableSectionFooter.xib */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -244,8 +262,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD731982593CE2B00499C5D /* NewsTableViewSectionHeader.xib in Resources */,
 				0D0CF71D2576E1E900B59DB8 /* LaunchScreen.storyboard in Resources */,
 				0D0CF71A2576E1E900B59DB8 /* Assets.xcassets in Resources */,
+				0DD731A92593F4FB00499C5D /* NewsTableSectionFooter.xib in Resources */,
 				0D0CF7182576E1E700B59DB8 /* Main.storyboard in Resources */,
 				0D6715AF25863D5B00215115 /* Graphics.storyboard in Resources */,
 				0DA2776A258E44FD00767C49 /* NewsTableViewCell.xib in Resources */,
@@ -262,9 +282,13 @@
 				0D33C14A2581400C00720367 /* FrinendsTableViewController.swift in Sources */,
 				0D25EBAB25851BAF0035A6E1 /* Model.swift in Sources */,
 				0D031B1C258AA047005FF413 /* ImLikeIt.swift in Sources */,
+				0DD731A32593DF5F00499C5D /* NewsImagePublicationCell.swift in Sources */,
 				0D25EB982584FFB70035A6E1 /* GroupsTableViewController.swift in Sources */,
 				0D0CF7272576E3AA00B59DB8 /* LoginFormController.swift in Sources */,
 				0D21973D258A8F1D00E6564C /* AvatarImage.swift in Sources */,
+				0DD731A82593F4FB00499C5D /* NewsTableSectionFooter.swift in Sources */,
+				0DD731A02593DD9C00499C5D /* NewsTextTableViewCell.swift in Sources */,
+				0DD7319B2593CEBA00499C5D /* NewsTableViewSectionHeader.swift in Sources */,
 				0D33C151258141AC00720367 /* FriendTableViewCell.swift in Sources */,
 				0D25EB9E258502860035A6E1 /* GroupsTableViewCell.swift in Sources */,
 				0D33C15725814F4600720367 /* FriendCollectionViewCell.swift in Sources */,

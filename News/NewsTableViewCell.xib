@@ -43,7 +43,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="9B4-4r-dX0"/>
                         </constraints>
-                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                         <color key="textColor" systemColor="labelColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -53,16 +53,17 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                     </imageView>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="32l-EQ-FHl" customClass="ImLikeIt" customModule="GB_UserUI_ClientVK" customModuleProvider="target">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="32l-EQ-FHl" customClass="ImLikeIt" customModule="GB_UserUI_ClientVK" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="185" width="128" height="19"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="32l-EQ-FHl" firstAttribute="leading" secondItem="dL0-Nx-2jQ" secondAttribute="leading" id="0fV-G4-6EN"/>
                     <constraint firstItem="ZYf-nl-JVU" firstAttribute="top" secondItem="F6g-Rg-kjz" secondAttribute="bottom" constant="2" id="6ZY-iE-rGl"/>
                     <constraint firstItem="ZYf-nl-JVU" firstAttribute="leading" secondItem="TPJ-og-Dw7" secondAttribute="trailing" constant="15" id="6vE-eo-Nc6"/>
                     <constraint firstAttribute="trailing" secondItem="ZYf-nl-JVU" secondAttribute="trailing" constant="15" id="IbG-oF-iO7"/>
+                    <constraint firstAttribute="trailing" secondItem="32l-EQ-FHl" secondAttribute="trailing" constant="192" id="KzD-B8-H7a"/>
                     <constraint firstItem="TPJ-og-Dw7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TDz-Ux-s6k"/>
                     <constraint firstItem="uEP-eO-VQR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YO9-oB-cXj"/>
                     <constraint firstItem="TPJ-og-Dw7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZER-NX-ylF"/>
@@ -70,7 +71,9 @@
                     <constraint firstItem="uEP-eO-VQR" firstAttribute="top" secondItem="TPJ-og-Dw7" secondAttribute="bottom" constant="2" id="heK-Cg-psv"/>
                     <constraint firstItem="F6g-Rg-kjz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="kBP-V9-rTb"/>
                     <constraint firstItem="F6g-Rg-kjz" firstAttribute="leading" secondItem="TPJ-og-Dw7" secondAttribute="trailing" constant="15" id="lmt-Ou-TbO"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="32l-EQ-FHl" secondAttribute="bottom" constant="-1" id="mjg-WE-4Fo"/>
                     <constraint firstAttribute="trailing" secondItem="F6g-Rg-kjz" secondAttribute="trailing" constant="15" id="vsZ-j0-kQH"/>
+                    <constraint firstItem="32l-EQ-FHl" firstAttribute="top" secondItem="dL0-Nx-2jQ" secondAttribute="bottom" id="xiN-Ss-TmN"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -58,6 +58,7 @@ import UIKit
     private func selectLike(_ sender: UIButton) {
         self.isLiked = !self.isLiked
         self.updateCountLikes()
+        animate()
     }
     
     private func updateCountLikes() {
@@ -67,6 +68,16 @@ import UIKit
     override func layoutSubviews() {
         super.layoutSubviews()
         stackView.frame = bounds
+    }
+    
+    private func animate() {
+        UIView.animate(withDuration: 0.1, animations: {
+            self.button.transform = self.transform.scaledBy(x: 1.2, y: 1.2)
+        }, completion: { _ in
+            UIView.animate(withDuration: 0.1, animations: {
+                self.button.transform = CGAffineTransform.identity
+            })
+        })
     }
 
 }

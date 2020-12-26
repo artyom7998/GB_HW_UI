@@ -32,4 +32,30 @@ class AvatarImage: UIView {
         self.layer.shadowOpacity = shadowOpacity
         self.layer.shadowRadius = shadowRadius
     }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        addGestureRecognizer(tapGestureRecognizer)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    lazy var tapGestureRecognizer: UITapGestureRecognizer = {
+            let recognizer = UITapGestureRecognizer(target: self,
+                                                    action: #selector(onTap))
+            recognizer.numberOfTapsRequired = 1    // количество нажатий для распознавания
+            return recognizer
+        }()
+    
+    @objc func onTap() {
+        let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
+        scaleAnimation.fromValue = transform.self
+        scaleAnimation.toValue = 0.9
+        scaleAnimation.duration = 0.1
+        scaleAnimation.autoreverses = true
+        layer.add(scaleAnimation, forKey: nil)
+    }
 }

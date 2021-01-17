@@ -8,7 +8,7 @@
 import UIKit
 
 class FrinendsTableViewController: UITableViewController {
-  
+
     @IBOutlet weak var searchBar: UISearchBar!
     
     var myFriends =

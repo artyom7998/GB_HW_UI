@@ -33,7 +33,8 @@ import UIKit
         stackView.axis = .horizontal
         stackView.alignment = .fill
         stackView.distribution = .fillProportionally
-
+        stackView.frame = CGRect(x: 0, y: 0, width: 80, height: 20)
+    
         self.addSubview(stackView)
         
         startIndicator()
@@ -91,15 +92,18 @@ import UIKit
     
     func addCircle() {
         let imgView1 = UIImageView()
+        imgView1.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
         imgView1.image = UIImage(systemName: "circle.fill")!
         self.circles.append(imgView1)
         
         let imgView2 = UIImageView()
         imgView2.image = UIImage(systemName: "circle.fill")!
+        imgView2.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
         self.circles.append(imgView2)
         
         let imgView3 = UIImageView()
         imgView3.image = UIImage(systemName: "circle.fill")!
+        imgView3.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
         self.circles.append(imgView3)
     }
     

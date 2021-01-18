@@ -24,6 +24,7 @@ class FrinendsTableViewController: UITableViewController {
         super.viewDidLoad()
         
         (firstLetters, sortedFriends) = sort(myFriends)
+        
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {

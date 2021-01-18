@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,6 +37,10 @@
 		0DD731A32593DF5F00499C5D /* NewsImagePublicationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD731A22593DF5F00499C5D /* NewsImagePublicationCell.swift */; };
 		0DD731A82593F4FB00499C5D /* NewsTableSectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD731A62593F4FB00499C5D /* NewsTableSectionFooter.swift */; };
 		0DD731A92593F4FB00499C5D /* NewsTableSectionFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD731A72593F4FB00499C5D /* NewsTableSectionFooter.xib */; };
+		0DD83ABA25B4E64600EDB9E5 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD83AB925B4E64600EDB9E5 /* NetworkServices.swift */; };
+		0DD83AC225B6275E00EDB9E5 /* AuthorizationVKController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD83AC125B6275E00EDB9E5 /* AuthorizationVKController.swift */; };
+		0DD83AC625B62BBD00EDB9E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD83AC525B62BBD00EDB9E5 /* LoginViewController.swift */; };
+		FA5D0C76F9053FAF634569F7 /* Pods_GB_UserUI_ClientVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4064C8942518732A1B26C4 /* Pods_GB_UserUI_ClientVK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +76,12 @@
 		0DD731A22593DF5F00499C5D /* NewsImagePublicationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsImagePublicationCell.swift; sourceTree = "<group>"; };
 		0DD731A62593F4FB00499C5D /* NewsTableSectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableSectionFooter.swift; sourceTree = "<group>"; };
 		0DD731A72593F4FB00499C5D /* NewsTableSectionFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableSectionFooter.xib; sourceTree = "<group>"; };
+		0DD83AB925B4E64600EDB9E5 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		0DD83AC125B6275E00EDB9E5 /* AuthorizationVKController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationVKController.swift; sourceTree = "<group>"; };
+		0DD83AC525B62BBD00EDB9E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		47A8DF17DFD4C999AF9E77A0 /* Pods-GB_UserUI_ClientVK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GB_UserUI_ClientVK.debug.xcconfig"; path = "Target Support Files/Pods-GB_UserUI_ClientVK/Pods-GB_UserUI_ClientVK.debug.xcconfig"; sourceTree = "<group>"; };
+		52F0A0C02C2C60E20F9C39DF /* Pods-GB_UserUI_ClientVK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GB_UserUI_ClientVK.release.xcconfig"; path = "Target Support Files/Pods-GB_UserUI_ClientVK/Pods-GB_UserUI_ClientVK.release.xcconfig"; sourceTree = "<group>"; };
+		7C4064C8942518732A1B26C4 /* Pods_GB_UserUI_ClientVK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GB_UserUI_ClientVK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5D0C76F9053FAF634569F7 /* Pods_GB_UserUI_ClientVK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +107,8 @@
 		0D0CF7042576E1E700B59DB8 = {
 			isa = PBXGroup;
 			children = (
+				0DD83AC025B6272300EDB9E5 /* Authorization */,
+				0DD83AB825B4E62400EDB9E5 /* Services */,
 				0D437EFD2597703F00CF9164 /* Indicators */,
 				0DA27763258E443500767C49 /* News */,
 				0D031B19258AA027005FF413 /* ImLikeIt */,
@@ -108,6 +121,8 @@
 				0D33C14825813FC900720367 /* Friends */,
 				0D0CF70F2576E1E700B59DB8 /* GB_UserUI_ClientVK */,
 				0D0CF70E2576E1E700B59DB8 /* Products */,
+				5D532260C9455F788213D40A /* Pods */,
+				88237BCD8E7111AEB5EAF0C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,6 +234,40 @@
 			path = News;
 			sourceTree = "<group>";
 		};
+		0DD83AB825B4E62400EDB9E5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0DD83AB925B4E64600EDB9E5 /* NetworkServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0DD83AC025B6272300EDB9E5 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				0DD83AC125B6275E00EDB9E5 /* AuthorizationVKController.swift */,
+				0DD83AC525B62BBD00EDB9E5 /* LoginViewController.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		5D532260C9455F788213D40A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47A8DF17DFD4C999AF9E77A0 /* Pods-GB_UserUI_ClientVK.debug.xcconfig */,
+				52F0A0C02C2C60E20F9C39DF /* Pods-GB_UserUI_ClientVK.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		88237BCD8E7111AEB5EAF0C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C4064C8942518732A1B26C4 /* Pods_GB_UserUI_ClientVK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,9 +275,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D0CF7212576E1E900B59DB8 /* Build configuration list for PBXNativeTarget "GB_UserUI_ClientVK" */;
 			buildPhases = (
+				25D6F56A40ED15EFCCAAC79C /* [CP] Check Pods Manifest.lock */,
 				0D0CF7092576E1E700B59DB8 /* Sources */,
 				0D0CF70A2576E1E700B59DB8 /* Frameworks */,
 				0D0CF70B2576E1E700B59DB8 /* Resources */,
+				DDD9318D2C0160F2AB4183BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,6 +339,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25D6F56A40ED15EFCCAAC79C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GB_UserUI_ClientVK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDD9318D2C0160F2AB4183BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GB_UserUI_ClientVK/Pods-GB_UserUI_ClientVK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GB_UserUI_ClientVK/Pods-GB_UserUI_ClientVK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GB_UserUI_ClientVK/Pods-GB_UserUI_ClientVK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D0CF7092576E1E700B59DB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -303,6 +396,7 @@
 				0DD731A82593F4FB00499C5D /* NewsTableSectionFooter.swift in Sources */,
 				0DB25BFD25B32C66007769F9 /* Account.swift in Sources */,
 				0DD731A02593DD9C00499C5D /* NewsTextTableViewCell.swift in Sources */,
+				0DD83ABA25B4E64600EDB9E5 /* NetworkServices.swift in Sources */,
 				0DD7319B2593CEBA00499C5D /* NewsTableViewSectionHeader.swift in Sources */,
 				0D33C151258141AC00720367 /* FriendTableViewCell.swift in Sources */,
 				0D25EB9E258502860035A6E1 /* GroupsTableViewCell.swift in Sources */,
@@ -310,11 +404,13 @@
 				0D0CF7112576E1E700B59DB8 /* AppDelegate.swift in Sources */,
 				0D6715B225863D9400215115 /* GraphicsViewController.swift in Sources */,
 				0D25EBA3258514130035A6E1 /* AllGroupsTableViewController.swift in Sources */,
+				0DD83AC225B6275E00EDB9E5 /* AuthorizationVKController.swift in Sources */,
 				0DA27765258E446400767C49 /* NewsTableViewController.swift in Sources */,
 				0D25EBA7258516070035A6E1 /* AllGroupsTableViewCell.swift in Sources */,
 				0DA27769258E44FD00767C49 /* NewsTableViewCell.swift in Sources */,
 				0D437EFF2597708600CF9164 /* LoadingIndicatorUIView.swift in Sources */,
 				0D33C15425814CDF00720367 /* FriendCollectionViewController.swift in Sources */,
+				0DD83AC625B62BBD00EDB9E5 /* LoginViewController.swift in Sources */,
 				0D0CF7132576E1E700B59DB8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +555,7 @@
 		};
 		0D0CF7222576E1E900B59DB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47A8DF17DFD4C999AF9E77A0 /* Pods-GB_UserUI_ClientVK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -478,6 +575,7 @@
 		};
 		0D0CF7232576E1E900B59DB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52F0A0C02C2C60E20F9C39DF /* Pods-GB_UserUI_ClientVK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

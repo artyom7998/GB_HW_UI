@@ -9,11 +9,13 @@ import UIKit
 
 class AllGroupsTableViewController: UITableViewController {
     
-    var allGroups = [
-        GroupData("Группа 100", UIImage(systemName: "checkmark.seal")!),
-        GroupData("Группа 200", UIImage(systemName: "graduationcap")!),
-        GroupData("Группа 300", UIImage(systemName: "books.vertical")!),
-    ]
+    var allGroups = [GroupData]()
+    
+   // var allGroups = [
+    //    GroupData("Группа 100", UIImage(systemName: "checkmark.seal")!),
+     //   GroupData("Группа 200", UIImage(systemName: "graduationcap")!),
+      //  GroupData("Группа 300", UIImage(systemName: "books.vertical")!),
+    //]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +45,7 @@ class AllGroupsTableViewController: UITableViewController {
         else { return UITableViewCell() }
         
         cell.name.text = allGroups[indexPath.row].name
-        cell.imageView?.image = allGroups[indexPath.row].image
+        //cell.imageView?.image = allGroups[indexPath.row].image
         
         return cell
     }

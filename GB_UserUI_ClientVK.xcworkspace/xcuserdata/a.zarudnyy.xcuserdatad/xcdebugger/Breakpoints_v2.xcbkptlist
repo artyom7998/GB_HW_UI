@@ -36,5 +36,192 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC4A0372-EBCC-40AF-8619-82265960E899"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Friends/FrinendsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "FrinendsTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "EC4A0372-EBCC-40AF-8619-82265960E899 - 42c386259c7d96d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.FrinendsTableViewController.myFriends.getter : Swift.Array&lt;GB_UserUI_ClientVK.UserData&gt;"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/Friends/FrinendsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "EC4A0372-EBCC-40AF-8619-82265960E899 - bb62db619e075d2d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.FrinendsTableViewController.myFriends.setter : Swift.Array&lt;GB_UserUI_ClientVK.UserData&gt;"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/Friends/FrinendsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "EC4A0372-EBCC-40AF-8619-82265960E899 - 57d489cb4902118a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.FrinendsTableViewController.myFriends.modify : Swift.Array&lt;GB_UserUI_ClientVK.UserData&gt;"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/Friends/FrinendsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "EC4A0372-EBCC-40AF-8619-82265960E899 - fee78ab3d526d823"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.FrinendsTableViewController.myFriends.modify : Swift.Array&lt;GB_UserUI_ClientVK.UserData&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/Friends/FrinendsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "EC4A0372-EBCC-40AF-8619-82265960E899 - fce6a198ed01a8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.FrinendsTableViewController.init(style: __C.UITableViewStyle) -&gt; GB_UserUI_ClientVK.FrinendsTableViewController"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/Friends/FrinendsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "920">
+               </Location>
+               <Location
+                  uuid = "EC4A0372-EBCC-40AF-8619-82265960E899 - d7584e467b9ca647"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.FrinendsTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; GB_UserUI_ClientVK.FrinendsTableViewController"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/Friends/FrinendsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "971">
+               </Location>
+               <Location
+                  uuid = "EC4A0372-EBCC-40AF-8619-82265960E899 - 5d56c926a9929a0e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_UserUI_ClientVK.FrinendsTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;GB_UserUI_ClientVK.FrinendsTableViewController&gt;"
+                  moduleName = "GB_UserUI_ClientVK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.zarudnyy/Documents/GeekBrains/GB_UserUI_ClientVK/Friends/FrinendsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "906">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "40685AB2-1098-45DD-8120-692045D1B997"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Model/Photos.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "init(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EB14714F-D257-4567-AEE1-985858CD3AA0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/NetworkServices.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "getAllPhotos(_:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8E1271F8-F69F-4BF0-A219-1DBAC577827B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Model/Photos.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "init(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81793CF9-E4A8-46B3-8755-13FC30E48755"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Model/Photos.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

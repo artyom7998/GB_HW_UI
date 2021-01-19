@@ -7,6 +7,8 @@
 
 import UIKit
 
+/*
+
 public struct UserData {
     var name: String
     var city: String
@@ -30,6 +32,8 @@ public struct GroupData: Equatable {
         self.image = image
     }
 }
+ 
+ */
 
 public struct NewsData: Equatable {
    

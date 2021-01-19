@@ -9,10 +9,18 @@ import UIKit
 
 class FriendCollectionViewController: UICollectionViewController {
     
-    var userData: UserData?
+    private let networkServices = NetworkServices()
+    private var photos = [PhotoData]()
     
+    var userId: Int!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        networkServices.getAllPhotos(userId) { [weak self] photosResponse in
+            self?.photos = photosResponse
+            self?.collectionView.reloadData()
+        }
 
     }
 
@@ -36,7 +44,7 @@ class FriendCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 1
+        return photos.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -48,10 +56,7 @@ class FriendCollectionViewController: UICollectionViewController {
             return UICollectionViewCell()
         }
         
-        cell.name.text = userData?.name
-        cell.city.text = userData?.city
-        cell.image.image = userData?.image
-        cell.photoLikeControl.countLikes = userData?.countImageLikes ?? 9
+        cell.configure(with: photos[indexPath.row])
     
         return cell
     }

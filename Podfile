@@ -7,5 +7,7 @@ target 'GB_UserUI_ClientVK' do
 
   # Pods for GB_UserUI_ClientVK
   pod 'Alamofire', '~> 5.2'
+  pod 'SwiftyJSON', '~> 5.0.0'
+  pod 'Kingfisher', '~> 6.0.1'
 
 end

@@ -8,8 +8,14 @@
 import UIKit
 
 class GroupsTableViewController: UITableViewController {
+    
+    private let networkServices = NetworkServices()
+    private var groups = [GroupData]()
+
 
     @IBAction func addGroup(segue: UIStoryboardSegue) {
+        
+        /*
         // Проверяем идентификатор, чтобы убедиться, что это нужный переход
         if segue.identifier == "addGroup" {
             // Получаем ссылку на контроллер, с которого осуществлен переход
@@ -18,22 +24,25 @@ class GroupsTableViewController: UITableViewController {
             if let indexPath = controller.tableView.indexPathForSelectedRow {
                 
                 let group = controller.allGroups[indexPath.row]
-                if !myGroups.contains(group) {
-                    myGroups.append(group)
+                if !groups.contains(group) {
+                    groups.append(group)
                     tableView.reloadData()
                 }
             }
         }
+         
+         */
     }
-    
-    var myGroups = [
-        GroupData("Группа 1", UIImage(systemName: "checkmark.seal")!),
-        GroupData("Группа 2", UIImage(systemName: "graduationcap")!),
-        GroupData("Группа 3", UIImage(systemName: "books.vertical")!),
-    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        networkServices.getGroups { [weak self] groupsResponse in
+            
+            self?.groups = groupsResponse
+            self?.tableView.reloadData()
+            
+        }
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -51,7 +60,7 @@ class GroupsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return myGroups.count
+        return groups.count
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -75,8 +84,10 @@ class GroupsTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "myGroupTableCell", for: indexPath) as? GroupsTableViewCell
         else { return UITableViewCell() }
         
-        cell.name.text = myGroups[indexPath.row].name
-        cell.imageView?.image = myGroups[indexPath.row].image
+        cell.configure(with: groups[indexPath.row])
+        
+        //cell.name.text = groups[indexPath.row].name
+        //cell.imageView?.image = groups.image
         
         return cell
     }
@@ -92,7 +103,7 @@ class GroupsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            myGroups.remove(at: indexPath.row)
+            groups.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view

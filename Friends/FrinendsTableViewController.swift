@@ -10,7 +10,14 @@ import UIKit
 class FrinendsTableViewController: UITableViewController {
     
     private let networkServices = NetworkServices()
-    private var friends = [FriendData]()
+    private let realmService = RealmService()
+    
+    private var friends = [FriendData]() {
+        didSet {
+            (firstLetters, sortedFriends) = sort(friends)
+            tableView.reloadData()
+        }
+    }
     
     private var firstLetters = [Character]()
     private var sortedFriends = [Character: [FriendData]]()
@@ -20,22 +27,15 @@ class FrinendsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        networkServices.getFriends { [weak self] friendsResponse in
+        networkServices.getFriends { [self] friendsResponse in
             
-            self?.friends = friendsResponse
+            do {
+                try realmService.save(items: friendsResponse)
+            } catch {
+                print(error)
+            }
             
-            // Дичь
-            
-            var temporaryFirstLetters = [Character]()
-            var temporarySortedFriends = [Character: [FriendData]]()
-            
-            (temporaryFirstLetters, temporarySortedFriends) = self?.sort(friendsResponse) as! ([Character], [Character : [FriendData]])
-            
-            self?.firstLetters = temporaryFirstLetters
-            self?.sortedFriends = temporarySortedFriends
-        
-            self?.tableView.reloadData()
-            
+            self.friends = realmService.load(FriendData())
         }
         
     }

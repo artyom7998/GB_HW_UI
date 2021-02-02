@@ -7,18 +7,25 @@
 
 import Foundation
 import SwiftyJSON
+import RealmSwift
 
-struct FriendData {
-
-    let id: Int // идентификатор пользователя
-    let name: String // имя пользователя
-    let deactivated: String
-    let is_closed: Bool
-    let city: String
-    let online: Int
-    let photo_url: String
+class FriendData: Object {
     
-    init(_ json: JSON) {
+    @objc dynamic var id = 0
+    @objc dynamic var name = ""
+    @objc dynamic var deactivated = ""
+    @objc dynamic var is_closed = false
+    @objc dynamic var city = ""
+    @objc dynamic var online = 0
+    @objc dynamic var photo_url = ""
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+    
+    convenience init(_ json: JSON) {
+        self.init()
+        
         self.id = json["id"].intValue
         self.name = json["first_name"].stringValue + " " + json["last_name"].stringValue
         self.deactivated = json["deactivated"].stringValue

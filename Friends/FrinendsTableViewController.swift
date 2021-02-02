@@ -8,22 +8,35 @@
 import UIKit
 
 class FrinendsTableViewController: UITableViewController {
+    
+    private let networkServices = NetworkServices()
+    private let realmService = RealmService()
+    
+    private var friends = [FriendData]() {
+        didSet {
+            (firstLetters, sortedFriends) = sort(friends)
+            tableView.reloadData()
+        }
+    }
+    
+    private var firstLetters = [Character]()
+    private var sortedFriends = [Character: [FriendData]]()
 
     @IBOutlet weak var searchBar: UISearchBar!
-    
-    var myFriends =
-        [
-        UserData("Иванов Иван", "Москва", UIImage(named: "friend1")!, 100),
-        UserData("Петров Петр", "Санкт Петербург", UIImage(named: "friend2")!, 200)
-        ]
-    
-    var firstLetters = [Character]()
-    var sortedFriends = [Character: [UserData]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        (firstLetters, sortedFriends) = sort(myFriends)
+        networkServices.getFriends { [self] friendsResponse in
+            
+            do {
+                try realmService.save(items: friendsResponse)
+            } catch {
+                print(error)
+            }
+            
+            self.friends = realmService.load(FriendData())
+        }
         
     }
 
@@ -50,11 +63,14 @@ class FrinendsTableViewController: UITableViewController {
         }
         
         let fristLetter = firstLetters[indexPath.section]
-        
-        if let userData = sortedFriends[fristLetter] {
+        if let friends = sortedFriends[fristLetter] {
+            cell.configure(with: friends[indexPath.row])
+            
+            /*
             cell.name.text = userData[indexPath.row].name
             cell.city.text = userData[indexPath.row].city
             cell.avatarImage.photoImage.image = userData[indexPath.row].image
+            */
         }
         
         return cell
@@ -74,17 +90,16 @@ class FrinendsTableViewController: UITableViewController {
             let destination = segue.destination as? FriendCollectionViewController,
             let indexPath = tableView.indexPathForSelectedRow
         else { return }
-        
+    
         let fristLetter = firstLetters[indexPath.section]
         let friends = sortedFriends[fristLetter]
-        destination.userData = friends?[indexPath.row]
-        
+        destination.userId = friends?[indexPath.row].id
     }
     
-    private func sort( _ friends: [UserData]) -> (characters: [Character], sortedFriends: [Character: [UserData]]) {
+    private func sort( _ friends: [FriendData]) -> (characters: [Character], sortedFriends: [Character: [FriendData]]) {
         
         var characters = [Character]()
-        var sortedFriends = [Character: [UserData]]()
+        var sortedFriends = [Character: [FriendData]]()
         
         friends.forEach { userData in
             
@@ -97,8 +112,30 @@ class FrinendsTableViewController: UITableViewController {
                 sortedFriends[character] = [userData]
                 characters.append(character)
             }
-            characters.sort()
+            
+            //characters.sort()
         }
+        
+        characters.sort()
+        
+        if friends.count > 5 {
+            
+            var topFriends = [FriendData]()
+            
+            for (index, value) in friends.enumerated() {
+                topFriends.append(value)
+                if index == 4 { break }
+            }
+            
+            let topCharacter = Character("★")
+            
+            var characterAppend = [Character]()
+            characterAppend.append(topCharacter)
+            characters = characterAppend + characters
+            
+            sortedFriends[topCharacter] = topFriends
+        }
+        
         return (characters, sortedFriends)
     }
 }
@@ -112,12 +149,12 @@ extension FrinendsTableViewController: UISearchBarDelegate {
     func filterFrineds(with text: String) {
         
         if text.isEmpty {
-            (firstLetters, sortedFriends) = sort(myFriends)
+            (firstLetters, sortedFriends) = sort(friends)
             tableView.reloadData()
             return
         }
         
-        let filteredFriends = myFriends.filter({ (userData) -> Bool in
+        let filteredFriends = friends.filter({ (userData) -> Bool in
             return userData.name.lowercased().contains(text.lowercased())
         })
         

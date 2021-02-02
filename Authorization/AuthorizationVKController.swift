@@ -7,6 +7,7 @@
 
 import UIKit
 import WebKit
+import RealmSwift
 
 class AuthorizationVKController: UIViewController {
    
@@ -66,12 +67,6 @@ extension AuthorizationVKController: WKNavigationDelegate {
         
         Account.shared.token = token
         Account.shared.userId = userIdInt
-        
-        let networkServices = NetworkServices()
-        networkServices.getFriends()
-        networkServices.getGroups()
-        networkServices.getPhotos()
-        networkServices.searchGroups("GeekBrains")
         
         decisionHandler(.cancel)
         performSegue(withIdentifier: "SuccessAuthorization", sender: self)

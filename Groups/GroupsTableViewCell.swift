@@ -6,10 +6,27 @@
 //
 
 import UIKit
+import Kingfisher
 
 class GroupsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var name: UILabel!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        name.text = nil
+        imageView?.image = nil
+    }
+    
+    
+    func configure(with groupData: GroupData) {
+        
+        name.text = groupData.name
+    
+        let url = URL(string: groupData.photo_url)
+        imageView?.kf.setImage(with: url, placeholder: UIImage(named: "friend1"))
+    }
     
     /*
     
@@ -24,4 +41,7 @@ class GroupsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
      */
+    
+
 }
+

@@ -10,8 +10,13 @@ import UIKit
 class GroupsTableViewController: UITableViewController {
     
     private let networkServices = NetworkServices()
-    private var groups = [GroupData]()
-
+    private let realmService = RealmService()
+    
+    private var groups = [GroupData]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     @IBAction func addGroup(segue: UIStoryboardSegue) {
         
@@ -37,11 +42,15 @@ class GroupsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        networkServices.getGroups { [weak self] groupsResponse in
+        networkServices.getGroups { [self] groupsResponse in
             
-            self?.groups = groupsResponse
-            self?.tableView.reloadData()
-            
+            do {
+                try realmService.save(items: groupsResponse)
+            } catch {
+                print(error)
+            }
+
+            self.groups = realmService.load(GroupData())
         }
         
         // Uncomment the following line to preserve selection between presentations

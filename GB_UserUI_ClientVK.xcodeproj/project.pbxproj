@@ -17,6 +17,7 @@
 		0D0CF71A2576E1E900B59DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D0CF7192576E1E900B59DB8 /* Assets.xcassets */; };
 		0D0CF71D2576E1E900B59DB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D0CF71B2576E1E900B59DB8 /* LaunchScreen.storyboard */; };
 		0D0CF7272576E3AA00B59DB8 /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0CF7262576E3AA00B59DB8 /* LoginFormController.swift */; };
+		0D19268425C9E33A006C751D /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D19268325C9E33A006C751D /* RealmService.swift */; };
 		0D21973D258A8F1D00E6564C /* AvatarImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21973C258A8F1D00E6564C /* AvatarImage.swift */; };
 		0D25EB982584FFB70035A6E1 /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D25EB972584FFB70035A6E1 /* GroupsTableViewController.swift */; };
 		0D25EB9E258502860035A6E1 /* GroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D25EB9D258502860035A6E1 /* GroupsTableViewCell.swift */; };
@@ -59,6 +60,7 @@
 		0D0CF71C2576E1E900B59DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D0CF71E2576E1E900B59DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D0CF7262576E3AA00B59DB8 /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
+		0D19268325C9E33A006C751D /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		0D21973C258A8F1D00E6564C /* AvatarImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImage.swift; sourceTree = "<group>"; };
 		0D25EB972584FFB70035A6E1 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
 		0D25EB9D258502860035A6E1 /* GroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewCell.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				0DD83AB925B4E64600EDB9E5 /* NetworkServices.swift */,
+				0D19268325C9E33A006C751D /* RealmService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				0DB25BFD25B32C66007769F9 /* Account.swift in Sources */,
 				0DD731A02593DD9C00499C5D /* NewsTextTableViewCell.swift in Sources */,
 				0DD83ABA25B4E64600EDB9E5 /* NetworkServices.swift in Sources */,
+				0D19268425C9E33A006C751D /* RealmService.swift in Sources */,
 				0DD7319B2593CEBA00499C5D /* NewsTableViewSectionHeader.swift in Sources */,
 				0D33C151258141AC00720367 /* FriendTableViewCell.swift in Sources */,
 				0D25EB9E258502860035A6E1 /* GroupsTableViewCell.swift in Sources */,

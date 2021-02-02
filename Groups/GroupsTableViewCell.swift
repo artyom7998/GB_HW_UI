@@ -23,9 +23,9 @@ class GroupsTableViewCell: UITableViewCell {
     func configure(with groupData: GroupData) {
         
         name.text = groupData.name
-        
+    
         let url = URL(string: groupData.photo_url)
-        imageView?.kf.setImage(with: url)
+        imageView?.kf.setImage(with: url, placeholder: UIImage(named: "friend1"))
     }
     
     /*
